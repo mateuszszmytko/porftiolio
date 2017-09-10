@@ -14,7 +14,7 @@ module.exports = {
 	module: {
 		rules: [
 			{ test: /\.ts?$/, use: "awesome-typescript-loader" },
-			{ test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)$/,
+			{ test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico|pdf)$/,
 			  loader: 'file-loader?name=assets/[name].[hash:8].[ext]' },
 			{ test: /\.css$/, use: ExtractTextPlugin.extract(
                 [{loader: 'css-loader', options: {sourceMap: true, importLoaders: 1} },
